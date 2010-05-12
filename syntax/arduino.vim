@@ -1,10 +1,12 @@
 " Vim syntax file
 " Language:    Arduino
 " Maintainer:  Johannes Hoff <johannes@johanneshoff.com>
-" Last Change: 2010 April 5
+" Last Change: 2010 May 12
 
 " Syntax highlighting like in the Arduino IDE
 " Keywords extracted from <arduino>/build/shared/lib/keywords.txt
+
+" Thanks to Rik and Erik Nomitch for helpful feedback!
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
