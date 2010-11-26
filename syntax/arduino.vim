@@ -1,12 +1,13 @@
 " Vim syntax file
 " Language:    Arduino
 " Maintainer:  Johannes Hoff <johannes@johanneshoff.com>
-" Last Change: 2010 May 12
+" Last Change: 2010 November 21
 
 " Syntax highlighting like in the Arduino IDE
-" Keywords extracted from <arduino>/build/shared/lib/keywords.txt
+" Keywords extracted from <arduino>/build/shared/lib/keywords.txt (arduino
+" version 0021)
 
-" Thanks to Rik and Erik Nomitch for helpful feedback!
+" Thanks to Rik, Erik Nomitch and Adam Obeng for helpful feedback!
 
 " For version 5.x: Clear all syntax items
 " For version 6.x: Quit when a syntax file was already loaded
@@ -29,7 +30,7 @@ syn keyword arduinoConstant PI HALF_PI TWO_PI
 syn keyword arduinoConstant LSBFIRST MSBFIRST 
 syn keyword arduinoConstant CHANGE FALLING RISING 
 syn keyword arduinoConstant SERIAL DISPLAY
-syn keyword arduinoConstant DEFAULT EXTERNAL INTERAL
+syn keyword arduinoConstant DEFAULT EXTERNAL INTERAL INTERNAL1V1 INTERNAL2V56
 
 syn keyword arduinoStdFunc abs acos asin atan atan2 ceil constrain
 syn keyword arduinoStdFunc cos degrees exp floor log
@@ -45,9 +46,9 @@ syn keyword arduinoFunc pinMode digitalWrite digitalRead
 syn keyword arduinoFunc tone noTone pulseIn shiftOut 
 
 syn keyword arduinoMethod setup loop
-syn keyword arduinoMethod begin end available read flush print println write
+syn keyword arduinoMethod begin end available read flush print println write peek
 
-syn keyword arduinoModule Serial
+syn keyword arduinoModule Serial Serial1 Serial2 Serial3
 
 hi def link arduinoConstant Constant
 hi def link arduinoStdFunc Function
