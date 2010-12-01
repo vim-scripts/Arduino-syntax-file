@@ -2,6 +2,7 @@
 " Language:    Arduino
 " Maintainer:  Johannes Hoff <johannes@johanneshoff.com>
 " Last Change: 2010 November 21
+" License:     VIM license (:help license, replace vim by arduino.vim)
 
 " Syntax highlighting like in the Arduino IDE
 " Keywords extracted from <arduino>/build/shared/lib/keywords.txt (arduino
